@@ -2,730 +2,740 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shashank Sharma | General Manager - Export</title>
-
-  <!-- Meta Description -->
-  <meta name="description"
-    content="A Class Overseas - Premium quality marble and stone collection." />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://a-classoverseas.github.io/General-Manager/" />
-  <meta property="og:title" content="Shashank Sharma | General Manager - Export" />
-  <meta property="og:description"
-    content="A Class Overseas - Premium quality marble and stone collection." />
-  <meta property="og:image"
-    content="https://www.dropbox.com/scl/fi/k2kb0x1ierya7vnxq0q50/shashank-profile.jpg?rlkey=mbs5ynwobo2yr4itiyhswz5ix&st=p4i2epna&raw=1" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://a-classoverseas.github.io/General-Manager/" />
-  <meta property="twitter:title" content="Shashank Sharma | General Manager - Export" />
-  <meta property="twitter:description"
-    content="A Class Overseas - Premium quality marble and stone collection." />
-  <meta property="twitter:image"
-    content="https://www.dropbox.com/scl/fi/k2kb0x1ierya7vnxq0q50/shashank-profile.jpg?rlkey=mbs5ynwobo2yr4itiyhswz5ix&st=p4i2epna&raw=1" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box
-    }
-
-    body {
-      font-family: Poppins, sans-serif;
-      background: #f1f3f6;
-      padding: 40px 20px
-    }
-
-    .wrapper {
-      max-width: 600px;
-      margin: 0 auto
-    }
-
-    .banner img,
-    .banner video {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 14px;
-      display: block
-    }
-
-    .profile-box {
-      margin: -60px 15px 0;
-      background: #fff;
-      border-radius: 16px;
-      padding: 25px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, .1);
-      text-align: center
-    }
-
-    .profile-box img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #fff;
-      transition: transform .3s;
-      cursor: pointer
-    }
-
-    .profile-box img:hover {
-      transform: scale(1.05)
-    }
-
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, .9);
-      z-index: 10000;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer
-    }
-
-    .modal-overlay.active {
-      display: flex
-    }
-
-    .modal-content {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 10px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, .5)
-    }
-
-    .modal-close {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      font-size: 40px;
-      color: #fff;
-      cursor: pointer;
-      transition: color .3s
-    }
-
-    .modal-close:hover {
-      color: #ccc
-    }
-
-    .profile-box h3 {
-      margin-top: 15px;
-      margin-bottom: 5px;
-      font-size: 24px;
-      font-weight: 600
-    }
-
-    .profile-box .subtitle {
-      color: #6c757d;
-      margin-bottom: 5px
-    }
-
-    .profile-box .company {
-      font-weight: 600;
-      margin-bottom: 15px
-    }
-
-    .profile-box .description {
-      margin-top: 15px;
-      line-height: 1.6
-    }
-
-    .social-icons {
-      margin-top: 20px
-    }
-
-    .social-icons a {
-      display: inline-block;
-      margin: 0 10px;
-      font-size: 26px;
-      color: #333;
-      transition: all .3s
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-      color: #007bff
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      margin: 30px 15px 0
-    }
-
-    .contact-grid .full-width {
-      grid-column: 1/-1
-    }
-
-    .info-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 18px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
-      transition: transform .3s
-    }
-
-    .info-card:hover {
-      transform: translateY(-4px)
-    }
-
-    .info-card h6 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 8px
-    }
-
-    .info-card h6 i {
-      margin-right: 8px
-    }
-
-    .info-card a {
-      color: #007bff;
-      text-decoration: none
-    }
-
-    .info-card a:hover {
-      text-decoration: underline
-    }
-
-    .qr-section {
-      text-align: center;
-      margin-top: 50px
-    }
-
-    .qr-section h4 {
-      font-size: 20px;
-      margin-bottom: 20px
-    }
-
-    .qr-box {
-      display: inline-block;
-      padding: 15px;
-      background: #f9f9f9;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, .1)
-    }
-
-    .qr-box img {
-      display: block;
-      cursor: pointer
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 30px;
-      color: #6c757d
-    }
-
-    .contact-form-section .form-group {
-      margin-bottom: 15px
-    }
-
-    .contact-form-section label {
-      display: block;
-      font-size: 14px;
-      font-weight: 500;
-      color: #333;
-      margin-bottom: 6px
-    }
-
-    .contact-form-section input {
-      width: 100%;
-      padding: 12px 15px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      font-size: 14px;
-      font-family: Poppins, sans-serif;
-      transition: border-color .3s, box-shadow .3s;
-      outline: none
-    }
-
-    .contact-form-section input:focus {
-      border-color: #000;
-      box-shadow: 0 0 0 3px rgba(0, 0, 0, .08)
-    }
-
-    .contact-form-section .submit-btn {
-      width: 100%;
-      padding: 14px;
-      background: #000;
-      color: #fff;
-      border: none;
-      border-radius: 50px;
-      font-size: 16px;
-      font-weight: 600;
-      font-family: Poppins, sans-serif;
-      cursor: pointer;
-      transition: all .3s;
-      margin-top: 10px
-    }
-
-    .contact-form-section .submit-btn:hover {
-      background: #333;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, .3)
-    }
-
-    .contact-form-section .submit-btn i {
-      margin-right: 8px
-    }
-
-    .sticky-btn-wrapper {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1000
-    }
-
-    .add-contact-btn {
-      background: #000;
-      color: #fff;
-      padding: 15px 30px;
-      border-radius: 50px;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
-      transition: all .3s
-    }
-
-    .add-contact-btn:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, .6);
-      color: #fff
-    }
-
-    .share-btn {
-      position: fixed;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      background: #000;
-      color: #fff;
-      padding: 14px 18px;
-      border-radius: 12px 0 0 12px;
-      font-size: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, .25);
-      text-decoration: none;
-      transition: all .3s;
-      z-index: 9999
-    }
-
-    .share-btn:hover {
-      background: #afafaf
-    }
-
-    .section-header {
-      text-align: center;
-      font-size: 20px;
-      margin: 40px 0 20px;
-      position: relative;
-      padding-bottom: 15px;
-      color: #333
-    }
-
-    .section-island {
-      background: #fff;
-      border-radius: 16px;
-      padding: 25px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, .1);
-      margin: 20px 15px
-    }
-
-    .section-island .section-header {
-      margin-top: 0
-    }
-
-    .gallery-card,
-    .product-card,
-    .testimonial-card {
-      background: #f9f9f9;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
-      margin: 10px;
-      transition: transform .3s
-    }
-
-    .gallery-card:hover,
-    .product-card:hover,
-    .testimonial-card:hover {
-      transform: translateY(-5px)
-    }
-
-    .gallery-card a {
-      display: block
-    }
-
-    .gallery-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover
-    }
-
-    .product-image {
-      width: 100%;
-      height: 180px;
-      overflow: hidden
-    }
-
-    .product-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover
-    }
-
-    .product-details {
-      padding: 15px
-    }
-
-    .product-details h4 {
-      font-size: 16px;
-      margin-bottom: 8px;
-      color: #000
-    }
-
-    .product-details p {
-      font-size: 13px;
-      color: #666;
-      line-height: 1.5
-    }
-
-    .testimonial-card {
-      padding: 20px
-    }
-
-    .testimonial-user {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 15px
-    }
-
-    .testimonial-avatar {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      overflow: hidden
-    }
-
-    .testimonial-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover
-    }
-
-    .testimonial-user-info h5 {
-      margin: 0;
-      font-size: 16px;
-      color: #000
-    }
-
-    .testimonial-user-info p {
-      margin: 0;
-      font-size: 12px;
-      color: #6c757d
-    }
-
-    .testimonial-message {
-      font-size: 14px;
-      color: #555;
-      font-style: italic;
-      line-height: 1.5
-    }
-
-    .slick-dots li button:before {
-      font-size: 10px;
-      color: #ccc
-    }
-
-    .slick-dots li.slick-active button:before {
-      color: #000 !important
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: #000
-    }
-
-    @media(max-width:600px) {
-      .contact-grid {
-        grid-template-columns: 1fr
-      }
-
-      .sticky-btn-wrapper {
-        bottom: 15px;
-        right: 15px
-      }
-
-      .add-contact-btn {
-        padding: 12px 20px;
-        font-size: .9rem
-      }
-    }
-
-    @media(min-width:601px) {
-      .share-btn {
-        left: 50%;
-        right: auto;
-        margin-left: 250px
-      }
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shashank Sharma | General Manager - Export</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="A Class Overseas - Premium quality marble and stone collection." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://a-classoverseas.github.io/General-Manager/" />
+    <meta property="og:title" content="Shashank Sharma | General Manager - Export" />
+    <meta property="og:description" content="A Class Overseas - Premium quality marble and stone collection." />
+    <meta property="og:image"
+        content="https://www.dropbox.com/scl/fi/k2kb0x1ierya7vnxq0q50/shashank-profile.jpg?rlkey=mbs5ynwobo2yr4itiyhswz5ix&st=p4i2epna&raw=1" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://a-classoverseas.github.io/General-Manager/" />
+    <meta property="twitter:title" content="Shashank Sharma | General Manager - Export" />
+    <meta property="twitter:description" content="A Class Overseas - Premium quality marble and stone collection." />
+    <meta property="twitter:image"
+        content="https://www.dropbox.com/scl/fi/k2kb0x1ierya7vnxq0q50/shashank-profile.jpg?rlkey=mbs5ynwobo2yr4itiyhswz5ix&st=p4i2epna&raw=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background: #f1f3f6;
+            padding: 40px 20px
+        }
+
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto
+        }
+
+        .banner {
+            position: relative;
+            z-index: 1
+        }
+
+        .banner img,
+        .banner video {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 14px;
+            display: block
+        }
+
+        .profile-box {
+            position: relative;
+            z-index: 2;
+            margin: -15px 15px 0;
+            background: #fff;
+            border-radius: 16px;
+            padding: 80px 25px 25px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .1);
+            text-align: center
+        }
+
+        .profile-box img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
+            transition: transform .3s;
+            cursor: pointer;
+            position: absolute;
+            top: -65px;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        .profile-box img:hover {
+            transform: translateX(-50%) scale(1.05)
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .9);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer
+        }
+
+        .modal-overlay.active {
+            display: flex
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .5)
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: #fff;
+            cursor: pointer;
+            transition: color .3s
+        }
+
+        .modal-close:hover {
+            color: #ccc
+        }
+
+        .profile-box h3 {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 24px;
+            font-weight: 600
+        }
+
+        .profile-box .subtitle {
+            color: #6c757d;
+            margin-bottom: 5px
+        }
+
+        .profile-box .company {
+            font-weight: 600;
+            margin-bottom: 15px
+        }
+
+        .profile-box .description {
+            margin-top: 15px;
+            line-height: 1.6
+        }
+
+        .social-icons {
+            margin-top: 20px
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 26px;
+            color: #333;
+            transition: all .3s
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #007bff
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 30px 15px 0
+        }
+
+        .contact-grid .full-width {
+            grid-column: 1/-1
+        }
+
+        .info-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
+            transition: transform .3s
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px)
+        }
+
+        .info-card h6 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px
+        }
+
+        .info-card h6 i {
+            margin-right: 8px
+        }
+
+        .info-card a {
+            color: #007bff;
+            text-decoration: none
+        }
+
+        .info-card a:hover {
+            text-decoration: underline
+        }
+
+        .qr-section {
+            text-align: center;
+            margin-top: 50px
+        }
+
+        .qr-section h4 {
+            font-size: 20px;
+            margin-bottom: 20px
+        }
+
+        .qr-box {
+            display: inline-block;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1)
+        }
+
+        .qr-box img {
+            display: block;
+            cursor: pointer
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #6c757d
+        }
+
+        .contact-form-section .form-group {
+            margin-bottom: 15px
+        }
+
+        .contact-form-section label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 6px
+        }
+
+        .contact-form-section input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 14px;
+            font-family: Poppins, sans-serif;
+            transition: border-color .3s, box-shadow .3s;
+            outline: none
+        }
+
+        .contact-form-section input:focus {
+            border-color: #000;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, .08)
+        }
+
+        .contact-form-section .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Poppins, sans-serif;
+            cursor: pointer;
+            transition: all .3s;
+            margin-top: 10px
+        }
+
+        .contact-form-section .submit-btn:hover {
+            background: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, .3)
+        }
+
+        .contact-form-section .submit-btn i {
+            margin-right: 8px
+        }
+
+        .sticky-btn-wrapper {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000
+        }
+
+        .add-contact-btn {
+            background: #000;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+            transition: all .3s
+        }
+
+        .add-contact-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .6);
+            color: #fff
+        }
+
+        .share-btn {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background: #000;
+            color: #fff;
+            padding: 14px 18px;
+            border-radius: 12px 0 0 12px;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .25);
+            text-decoration: none;
+            transition: all .3s;
+            z-index: 9999
+        }
+
+        .share-btn:hover {
+            background: #afafaf
+        }
+
+        .section-header {
+            text-align: center;
+            font-size: 20px;
+            margin: 40px 0 20px;
+            position: relative;
+            padding-bottom: 15px;
+            color: #333
+        }
+
+        .section-island {
+            background: #fff;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .1);
+            margin: 20px 15px
+        }
+
+        .section-island .section-header {
+            margin-top: 0
+        }
+
+        .gallery-card,
+        .product-card,
+        .testimonial-card {
+            background: #f9f9f9;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+            margin: 10px;
+            transition: transform .3s
+        }
+
+        .gallery-card:hover,
+        .product-card:hover,
+        .testimonial-card:hover {
+            transform: translateY(-5px)
+        }
+
+        .gallery-card a {
+            display: block
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover
+        }
+
+        .product-image {
+            width: 100%;
+            height: 180px;
+            overflow: hidden
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .product-details {
+            padding: 15px
+        }
+
+        .product-details h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #000
+        }
+
+        .product-details p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5
+        }
+
+        .testimonial-card {
+            padding: 20px
+        }
+
+        .testimonial-user {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .testimonial-user-info h5 {
+            margin: 0;
+            font-size: 16px;
+            color: #000
+        }
+
+        .testimonial-user-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #6c757d
+        }
+
+        .testimonial-message {
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+            line-height: 1.5
+        }
+
+        .slick-dots li button:before {
+            font-size: 10px;
+            color: #ccc
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #000 !important
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: #000
+        }
+
+        @media(max-width:600px) {
+            .contact-grid {
+                grid-template-columns: 1fr
+            }
+
+            .sticky-btn-wrapper {
+                bottom: 15px;
+                right: 15px
+            }
+
+            .add-contact-btn {
+                padding: 12px 20px;
+                font-size: .9rem
+            }
+        }
+
+        @media(min-width:601px) {
+            .share-btn {
+                left: 50%;
+                right: auto;
+                margin-left: 250px
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="banner">
-      <video autoplay muted playsinline>
-        <source
-          src="https://www.dropbox.com/scl/fi/9wzuhq6zup8wng15l5pjq/bg-video.mp4?rlkey=6deqd3lhgbmmm0ck5wc7w5b06&st=do1dyony&raw=1"
-          type="video/mp4">
-      </video>
-    </div>
+    <div class="wrapper">
+        <div class="banner">
+            <video autoplay muted playsinline>
+                <source
+                    src="https://www.dropbox.com/scl/fi/5fu0zzfxcc2wj7g2t6lt0/bg-video.mp4?rlkey=7chhhrpnia3tsayse1xkgyzgc&e=1&st=i2ag7cgn&raw=1"
+                    type="video/mp4">
+            </video>
+        </div>
 
-    <div class="profile-box">
-      <img
-        src="https://www.dropbox.com/scl/fi/k2kb0x1ierya7vnxq0q50/shashank-profile.jpg?rlkey=mbs5ynwobo2yr4itiyhswz5ix&st=p4i2epna&raw=1"
-        alt="Profile" />
-      <h3>Shashank Sharma</h3>
-      <p class="subtitle">General Manager - Export</p>
-      <p class="company">A-Class Overseas</p>
-      <p class="description">From Our Quarries to Global Landmarks</p>
-      <div class="social-icons">
-        <a href="https://www.aclassoverseas.com/" target="_blank" aria-label="Website"><i
-            class="fa-solid fa-globe"></i></a>
-        <a href="https://www.facebook.com/aclassoverseas/" target="_blank" aria-label="Facebook"><i
-            class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/aclassoverseas/" target="_blank" aria-label="Instagram"><i
-            class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/aclassoverseas/" target="_blank" aria-label="LinkedIn"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://share.google/pVyQVQP29FZhNOnsh" target="_blank" aria-label="Location"><i
-            class="fa-solid fa-location-dot"></i></a>
-        <a href="https://wa.me/+919958039396/?text=" target="_blank" aria-label="WhatsApp"><i
-            class="fab fa-whatsapp"></i></a>
-        <a href="https://u.wechat.com/kKy7e8NOZXNQpfCw3Tyz938?s=2" target="_blank" aria-label="WeChat"><i
-            class="fab fa-weixin"></i></a>
-      </div>
-    </div>
-
-    <div class="contact-grid">
-      <div class="info-card">
-        <h6><i class="fa-solid fa-envelope"></i> Email</h6>
-        <a href="mailto:gmexport@aclassoverseas.com">gmexport@aclassoverseas.com</a>
-      </div>
-      <div class="info-card">
-        <h6><i class="fa-solid fa-phone"></i> Mobile</h6>
-        <a href="tel:+99580 39396">+91 99580 39396</a><br><a href="tel:+260 960370444">+260 960370444</a>
-      </div>
-      <div class="info-card full-width">
-        <h6><i class="fa-solid fa-location-dot"></i> Address</h6>
-        Operations: Zambia | Tanzania | India
-      </div>
-    </div>
-
-    <div class="product-section section-island">
-      <h2 class="section-header">Products</h2>
-      <div class="product-slider">
-        <div class="product-item">
-          <a href="https://www.aclassoverseas.com/marble-collection/angelo-fiore/" target="_blank"
-            style="text-decoration:none">
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://www.dropbox.com/scl/fi/odkxuow9g3lyaqo6hnytc/angelo-fiore-thumb.webp?rlkey=hf8bafizbjhx0hoqqhm5oirsm&st=19njas79&raw=1"
-                  alt="Angelo Fiore">
-              </div>
-              <div class="product-details">
-                <h4>Angelo Fiore</h4>
-                <p>A warm champagne-toned marble with graceful veining that adds subtle richness.
-                </p>
-              </div>
+        <div class="profile-box">
+            <img src="https://www.dropbox.com/scl/fi/ybizfh1s4mo4xx0dfe5iq/shashank-profile-2.jpg?rlkey=qim4tra4cr9i64k1ebfn6l4ay&e=1&st=pjp01oge&raw=1"
+                alt="Profile" />
+            <h3>Shashank Sharma</h3>
+            <p class="subtitle">General Manager - Export</p>
+            <p class="company">A-Class Overseas</p>
+            <p class="description">From Our Quarries to Global Landmarks</p>
+            <div class="social-icons">
+                <a href="https://www.aclassoverseas.com/" target="_blank" aria-label="Website"><i
+                        class="fa-solid fa-globe"></i></a>
+                <a href="https://www.facebook.com/aclassoverseas/" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/aclassoverseas/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/aclassoverseas/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://share.google/pVyQVQP29FZhNOnsh" target="_blank" aria-label="Location"><i
+                        class="fa-solid fa-location-dot"></i></a>
+                <a href="https://wa.me/+919958039396/?text=" target="_blank" aria-label="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://u.wechat.com/kKy7e8NOZXNQpfCw3Tyz938?s=2" target="_blank" aria-label="WeChat"><i
+                        class="fab fa-weixin"></i></a>
             </div>
-          </a>
         </div>
-        <div class="product-item">
-          <a href="https://www.aclassoverseas.com/marble-collection/angelo-white/" target="_blank"
-            style="text-decoration:none">
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://www.dropbox.com/scl/fi/ea2461ys1hl84davkrw5l/angelo-white-thumb.webp?rlkey=boso4gkzzoh5rygxo6wlgdof9&st=hox8z40d&raw=1"
-                  alt="Angelo White">
-              </div>
-              <div class="product-details">
-                <h4>Angelo White</h4>
-                <p>Soft smokey-grey waves flow across a pure white surface, creating gentle movement.</p>
-              </div>
+
+        <div class="contact-grid">
+            <div class="info-card">
+                <h6><i class="fa-solid fa-envelope"></i> Email</h6>
+                <a href="mailto:gmexport@aclassoverseas.com">gmexport@aclassoverseas.com</a>
             </div>
-          </a>
-        </div>
-        <div class="product-item">
-          <a href="https://www.aclassoverseas.com/marble-collection/kilimanjaro-white/" target="_blank"
-            style="text-decoration:none">
-            <div class="product-card">
-              <div class="product-image">
-                <img
-                  src="https://www.dropbox.com/scl/fi/lud4ep7an26e8rmv08c8h/kilimanjaro-thumb.webp?rlkey=022hsmgsnvc2wzuomhac5izus&st=5vrj2bmf&raw=1"
-                  alt="Kilimanjaro White">
-              </div>
-              <div class="product-details">
-                <h4>Kilimanjaro White</h4>
-                <p>Pristine white with delicate veining, Kilimanjaro White captures the look of fresh snow.</p>
-              </div>
+            <div class="info-card">
+                <h6><i class="fa-solid fa-phone"></i> Mobile</h6>
+                <a href="tel:+99580 39396">+91 99580 39396</a><br><a href="tel:+260 960370444">+260 960370444</a>
             </div>
-          </a>
+            <div class="info-card full-width">
+                <h6><i class="fa-solid fa-location-dot"></i> Address</h6>
+                Operations: Zambia | Tanzania | India
+            </div>
         </div>
-      </div>
+
+        <div class="product-section section-island">
+            <h2 class="section-header">Products</h2>
+            <div class="product-slider">
+                <div class="product-item">
+                    <a href="https://www.aclassoverseas.com/marble-collection/angelo-fiore/" target="_blank"
+                        style="text-decoration:none">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://www.dropbox.com/scl/fi/tuhanu92mmk8d1gnjtm3f/AF.png?rlkey=a6b225rgagp3f3syj62i35d5k&e=1&st=ma7p08k3&raw=1"
+                                    alt="Angelo Fiore">
+                            </div>
+                            <div class="product-details">
+                                <h4>Angelo Fiore</h4>
+                                <p>A warm champagne-toned marble with graceful veining that adds subtle richness.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="https://www.aclassoverseas.com/marble-collection/angelo-white/" target="_blank"
+                        style="text-decoration:none">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://www.dropbox.com/scl/fi/x1y2yxa21kv04fizc6xk3/AW.png?rlkey=lkd6fkc9ahqalyb5x1b3vkvpn&e=1&st=r3ss44ot&raw=1"
+                                    alt="Angelo White">
+                            </div>
+                            <div class="product-details">
+                                <h4>Angelo White</h4>
+                                <p>Soft smokey-grey waves flow across a pure white surface, creating gentle movement.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="https://www.aclassoverseas.com/marble-collection/kilimanjaro-white/" target="_blank"
+                        style="text-decoration:none">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://www.dropbox.com/scl/fi/zknghwgndo7neqjoi1tzk/KW.png?rlkey=uk83vxask15ac8j0l585hkqle&e=1&st=0boa3wr8&raw=1"
+                                    alt="Kilimanjaro White">
+                            </div>
+                            <div class="product-details">
+                                <h4>Kilimanjaro White</h4>
+                                <p>Pristine white with delicate veining, Kilimanjaro White captures the look of fresh
+                                    snow.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-section section-island">
+            <h2 class="section-header">Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-user">
+                            <div class="testimonial-avatar">
+                                <img src="https://www.dropbox.com/scl/fi/gx6a0raeaeha8xdxu9sho/person-icon.jpg?rlkey=0kvv7y85ubjg3owiwizy0113f&e=1&st=ytsq2001&raw=1"
+                                    alt="Chin Lu">
+                            </div>
+                            <div class="testimonial-user-info">
+                                <h5>Chin Lu</h5>
+                                <p>Natural Stone Importer</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-message">"With A-Class Overseas, we're not just sourcing marble—we're
+                            sourcing
+                            reliability. Their control over the entire supply chain, right from the quarry to shipment,
+                            gives us
+                            unmatched confidence in both quality and timelines."</p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-user">
+                            <div class="testimonial-avatar">
+                                <img src="https://www.dropbox.com/scl/fi/gx6a0raeaeha8xdxu9sho/person-icon.jpg?rlkey=0kvv7y85ubjg3owiwizy0113f&e=1&st=ytsq2001&raw=1"
+                                    alt="David Yang">
+                            </div>
+                            <div class="testimonial-user-info">
+                                <h5>David Yang</h5>
+                                <p>Marble importer</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-message">"The consistency of blocks we receive from A-Class Overseas is
+                            exceptional.
+                            Owning their own quarries gives them a distinct edge—whether it's volume requirements or
+                            custom
+                            selections, they always deliver."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="qr-section section-island">
+            <h2 class="section-header">QR Code</h2>
+            <div class="qr-box">
+                <img id="qrCodeImg"
+                    src="https://www.dropbox.com/scl/fi/e6iz866658pvba2c5gwwr/qr-code.webp?rlkey=9v5znw8fhbqitb0wvwmf7cfiw&e=1&st=lxdymbgr&raw=1"
+                    width="180" alt="QR" />
+            </div>
+        </div>
+
+        <div class="contact-form-section section-island">
+            <h2 class="section-header">Share Your Contact</h2>
+            <form id="shareContactForm">
+                <div class="form-group">
+                    <label for="contactName"><i class="fa-solid fa-user"></i> Name</label>
+                    <input type="text" id="contactName" name="name" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label for="companyName"><i class="fa-solid fa-building"></i> Company Name</label>
+                    <input type="text" id="companyName" name="company" placeholder="Enter your company name" required />
+                </div>
+                <div class="form-group">
+                    <label for="mobileNumber"><i class="fa-solid fa-phone"></i> Mobile Number</label>
+                    <input type="tel" id="mobileNumber" name="mobile" placeholder="Enter your mobile number" required />
+                </div>
+                <div class="form-group">
+                    <label for="emailId"><i class="fa-solid fa-envelope"></i> Email ID</label>
+                    <input type="email" id="emailId" name="email" placeholder="Enter your email ID" required />
+                </div>
+                <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+            </form>
+        </div>
+
+        <p class="footer">© Copyright 2026 <br> A-Class Overseas</p>
     </div>
 
-    <div class="testimonial-section section-island">
-      <h2 class="section-header">Testimonials</h2>
-      <div class="testimonial-slider">
-        <div class="testimonial-item">
-          <div class="testimonial-card">
-            <div class="testimonial-user">
-              <div class="testimonial-avatar">
-                <img
-                  src="https://www.dropbox.com/scl/fi/rudo953nakzx4ziejhhxu/person-icon.jpg?rlkey=1h2xc7eisho3hyp6je52di794&st=rqxmoerj&raw=1"
-                  alt="Chin Lu">
-              </div>
-              <div class="testimonial-user-info">
-                <h5>Chin Lu</h5>
-                <p>Natural Stone Importer</p>
-              </div>
-            </div>
-            <p class="testimonial-message">"With A-Class Overseas, we're not just sourcing marble—we're sourcing
-              reliability. Their control over the entire supply chain, right from the quarry to shipment, gives us
-              unmatched confidence in both quality and timelines."</p>
-          </div>
-        </div>
-        <div class="testimonial-item">
-          <div class="testimonial-card">
-            <div class="testimonial-user">
-              <div class="testimonial-avatar">
-                <img
-                  src="https://www.dropbox.com/scl/fi/rudo953nakzx4ziejhhxu/person-icon.jpg?rlkey=1h2xc7eisho3hyp6je52di794&st=rqxmoerj&raw=1"
-                  alt="David Yang">
-              </div>
-              <div class="testimonial-user-info">
-                <h5>David Yang</h5>
-                <p>Marble importer</p>
-              </div>
-            </div>
-            <p class="testimonial-message">"The consistency of blocks we receive from A-Class Overseas is exceptional.
-              Owning their own quarries gives them a distinct edge—whether it's volume requirements or custom
-              selections, they always deliver."</p>
-          </div>
-        </div>
-      </div>
+    <div class="sticky-btn-wrapper">
+        <a href="https://a-classoverseas.github.io/General-Manager/oversease-shashank.vcf" download
+            class="add-contact-btn">
+            <i class="fas fa-address-card"></i>
+            Add to Contact
+        </a>
     </div>
 
-    <div class="qr-section section-island">
-      <h2 class="section-header">QR Code</h2>
-      <div class="qr-box">
-        <img id="qrCodeImg"
-          src="https://www.dropbox.com/scl/fi/386w8uly2neolw9s0h2t7/general-manager-qr-code.webp?rlkey=puv23v2vcir21rzq4n7xz3yez&st=4dfyv4ge&raw=1"
-          width="180" alt="QR" />
-      </div>
+    <div class="modal-overlay" id="imageModal">
+        <span class="modal-close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage" src="" alt="Profile">
     </div>
 
-    <div class="contact-form-section section-island">
-      <h2 class="section-header">Share Your Contact</h2>
-      <form id="shareContactForm">
-        <div class="form-group">
-          <label for="contactName"><i class="fa-solid fa-user"></i> Name</label>
-          <input type="text" id="contactName" name="name" placeholder="Enter your name" required />
-        </div>
-        <div class="form-group">
-          <label for="companyName"><i class="fa-solid fa-building"></i> Company Name</label>
-          <input type="text" id="companyName" name="company" placeholder="Enter your company name" required />
-        </div>
-        <div class="form-group">
-          <label for="mobileNumber"><i class="fa-solid fa-phone"></i> Mobile Number</label>
-          <input type="tel" id="mobileNumber" name="mobile" placeholder="Enter your mobile number" required />
-        </div>
-        <div class="form-group">
-          <label for="emailId"><i class="fa-solid fa-envelope"></i> Email ID</label>
-          <input type="email" id="emailId" name="email" placeholder="Enter your email ID" required />
-        </div>
-        <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> Submit</button>
-      </form>
-    </div>
-
-    <p class="footer">© Copyright 2026 <br> A-Class Overseas</p>
-  </div>
-
-  <div class="sticky-btn-wrapper">
-    <a href="https://a-classoverseas.github.io/General-Manager/oversease-shashank.vcf" download class="add-contact-btn">
-      <i class="fas fa-address-card"></i>
-      Add to Contact
+    <a href="javascript:void(0)" class="share-btn" onclick="shareProfile()" title="Share Profile">
+        <i class="fa-solid fa-share-nodes"></i>
     </a>
-  </div>
 
-  <div class="modal-overlay" id="imageModal">
-    <span class="modal-close" id="closeModal">&times;</span>
-    <img class="modal-content" id="modalImage" src="" alt="Profile">
-  </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.product-slider').slick({ dots: true, infinite: true, speed: 300, slidesToShow: 2, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000, arrows: false, responsive: [{ breakpoint: 480, settings: { slidesToShow: 1 } }] });
+            $('.testimonial-slider').slick({ dots: true, infinite: true, speed: 300, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 4000, arrows: false });
+        });
 
-  <a href="javascript:void(0)" class="share-btn" onclick="shareProfile()" title="Share Profile">
-    <i class="fa-solid fa-share-nodes"></i>
-  </a>
+        document.getElementById('shareContactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var name = document.getElementById('contactName').value;
+            var company = document.getElementById('companyName').value;
+            var mobile = document.getElementById('mobileNumber').value;
+            var email = document.getElementById('emailId').value;
+            var subject = encodeURIComponent('New Contact Details - ' + name);
+            var body = encodeURIComponent('Name: ' + name + '\nCompany Name: ' + company + '\nMobile Number: ' + mobile + '\nEmail ID: ' + email);
+            window.location.href = 'mailto:info.aclassoverseas@gmail.com?subject=' + subject + '&body=' + body;
+        });
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.product-slider').slick({ dots: true, infinite: true, speed: 300, slidesToShow: 2, slidesToScroll: 1, autoplay: true, autoplaySpeed: 3000, arrows: false, responsive: [{ breakpoint: 480, settings: { slidesToShow: 1 } }] });
-      $('.testimonial-slider').slick({ dots: true, infinite: true, speed: 300, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 4000, arrows: false });
-    });
+        const profileImg = document.querySelector('.profile-box img'), modal = document.getElementById('imageModal'), modalImg = document.getElementById('modalImage'), closeModal = document.getElementById('closeModal'), qrCodeImg = document.getElementById('qrCodeImg');
 
-    document.getElementById('shareContactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var name = document.getElementById('contactName').value;
-      var company = document.getElementById('companyName').value;
-      var mobile = document.getElementById('mobileNumber').value;
-      var email = document.getElementById('emailId').value;
-      var subject = encodeURIComponent('New Contact Details - ' + name);
-      var body = encodeURIComponent('Name: ' + name + '\nCompany Name: ' + company + '\nMobile Number: ' + mobile + '\nEmail ID: ' + email);
-      window.location.href = 'mailto:info.aclassoverseas@gmail.com?subject=' + subject + '&body=' + body;
-    });
+        profileImg.addEventListener('click', function () { modal.classList.add('active'); modalImg.src = this.src });
+        if (qrCodeImg) qrCodeImg.addEventListener('click', function () { modal.classList.add('active'); modalImg.src = this.src });
+        modal.addEventListener('click', function () { modal.classList.remove('active') });
+        closeModal.addEventListener('click', function () { modal.classList.remove('active') });
 
-    const profileImg = document.querySelector('.profile-box img'), modal = document.getElementById('imageModal'), modalImg = document.getElementById('modalImage'), closeModal = document.getElementById('closeModal'), qrCodeImg = document.getElementById('qrCodeImg');
-
-    profileImg.addEventListener('click', function () { modal.classList.add('active'); modalImg.src = this.src });
-    if (qrCodeImg) qrCodeImg.addEventListener('click', function () { modal.classList.add('active'); modalImg.src = this.src });
-    modal.addEventListener('click', function () { modal.classList.remove('active') });
-    closeModal.addEventListener('click', function () { modal.classList.remove('active') });
-
-    function shareProfile() {
-      if (navigator.share) {
-        navigator.share({ title: document.title, url: window.location.href }).catch(console.error);
-      } else {
-        navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied to clipboard!')).catch(console.error);
-      }
-    }
-  </script>
+        function shareProfile() {
+            if (navigator.share) {
+                navigator.share({ title: document.title, url: window.location.href }).catch(console.error);
+            } else {
+                navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied to clipboard!')).catch(console.error);
+            }
+        }
+    </script>
 </body>
 
 </html>
